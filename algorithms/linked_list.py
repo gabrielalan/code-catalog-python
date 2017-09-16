@@ -19,6 +19,23 @@ class DoublyLinkedList:
 		self.head = None
 		self.tail = None
 
+
+	'''
+	O(n) algorithm
+	'''
+	def to_array(self):
+		current = self.head
+		array = [current]
+
+		while current.next:
+			current = current.next
+			array.append(current)
+
+		return array
+
+	'''
+	O(n) algorithm
+	'''
 	def find(self, compare):
 		node = None
 		current = self.head

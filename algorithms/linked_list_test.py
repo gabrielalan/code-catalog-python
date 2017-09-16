@@ -51,6 +51,16 @@ class TestLinkedList(unittest.TestCase):
 		self.assertEqual(found, n2)
 		self.assertEqual(not_found, None)
 
+	def test_list_to_array(self):
+		n1 = self.list.append(1)
+		n2 = self.list.append(2)
+		n3 = self.list.append(3)
+
+		array = self.list.to_array()
+
+		self.assertIsInstance(array, list)
+		self.assertEqual(len(array), 3)
+
 	def test_list_item_remove(self):
 		n1 = self.list.append(1)
 		n2 = self.list.append(2)
