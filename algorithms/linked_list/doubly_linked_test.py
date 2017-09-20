@@ -1,6 +1,7 @@
 import unittest
 
-from linked_list import DoublyLinkedList, LinkedListNode
+from doubly_linked import DoublyLinkedList
+from node import LinkedListNode
 
 class TestLinkedList(unittest.TestCase):
 
