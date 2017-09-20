@@ -8,6 +8,9 @@ class TestLinkedList(unittest.TestCase):
 	def setUp(self):
 		self.list = DoublyLinkedList()
 
+	def test_empty(self):
+		self.assertTrue(self.list.empty())
+
 	def test_node(self):
 		node = LinkedListNode(1)
 		stepNode = LinkedListNode(2)

@@ -36,7 +36,10 @@ class DoublyLinkedList:
 			if not current.next:
 				return None
 
-			current = current.next;
+			current = current.next
+
+	def empty(self):
+		return not self.head and not self.tail
 
 	def remove(self, node):
 		if not isinstance(node, LinkedListNode):
